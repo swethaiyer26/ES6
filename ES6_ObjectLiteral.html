@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+            let firstName="Tutorials",lastName="Point"
+            let company={
+                firstName,
+                lastName
+            }
+            console.log(company);
+            console.log(company.firstName);
+            console.log(company.lastName);
+            </script>
+    </head>
+</html>
+
+<html>
+    <head>
+        <script>
+            let suffix='Name'
+            let company1={
+                ['first'+ suffix]:'Swetha',
+                ['second'+ suffix]:'Janardhan'
+            }
+            console.log(company1);
+            console.log(company1['firstName']);
+            console.log(company1['secondName']);
+        </script>
+    </head>
+</html>
+
+<html>
+    <head>
+        <script>
+        let thirdName='Arjun',lName='Arvind';
+        let company2={
+           thirdName,
+            lName,
+        getfullname(){
+            return this.thirdName + " - " + this.lName;
+        }
+        }
+        console.log(company2.getfullname());
+        console.log(company2);
+    </script>
+    </head>
+    </html>

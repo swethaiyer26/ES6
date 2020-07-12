@@ -1,0 +1,18 @@
+<html><head>
+    <script>
+const COLOR=Symbol();
+const MODEL=Symbol();
+const MAKE=Symbol();
+class Bike{
+    constructor(color,model,make){
+        this[COLOR]=color;
+        this[MODEL]=model;
+        this[MAKE]=make;
+    }
+}
+let bike=new Bike('Red','Honda','cbr');
+console.log(Bike);
+console.log(bike[COLOR]);
+</script>
+</head>
+</html>
