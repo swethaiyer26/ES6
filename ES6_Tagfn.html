@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+          function myTagfn(literals,...values){
+              console.log("literal values are");
+              for(let c of literals){
+                  console.log(c);
+              }
+              console.log("variable values are")
+              for(let c of values){
+                  console.log(c);
+              }
+              return "Done"
+          }
+          let company=`TutorialPoint`
+          let company_location=`Mumbai`
+          let result=myTagfn `Hello this is ${company} from ${company_location}`
+          console.log(result);
+        </script>
+    </head>
+</html>
+
+<html>
+    <head>
+        <script>
+            function convertToUpperTagFunc(literals,...values){
+                let result1="";
+                for(let i=0;i<literals.length;i++){
+                    result1+=literals[i];
+                    if(i < values.length) {
+                        result1+=values[i];
+                    }
+                }
+                return result1.toUpperCase();
+            }
+     let company1 = `TutorialsPoint`
+   let company_location1 = `Mumbai`
+   let result1 = convertToUpperTagFunc `Hello this is ${company1} from ${company_location1}`
+   console.log(result1)
+        </script>
+    </head>
+</html>
+
+<html>
+    <script>
+        console.log(String.fromCodePoint(42));
+        console.log(String.fromCodePoint(65,90));
+    </script>
+</html>
+            

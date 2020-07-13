@@ -1,0 +1,69 @@
+<html>
+    <script>
+        'use strict'
+        let weakmap=new WeakMap();
+        let obj={};
+        console.log(weakmap.set(obj,"hello"));
+        console.log(weakmap.has(obj));
+    </script>
+</html>
+
+<html>
+    <script>
+        'use strict'
+        let weakset=new WeakSet();
+        let obj1={msg:"hello"};
+        weakset.add(obj1);
+        console.log(weakset.has(obj1));
+        weakset.delete(obj1);
+        console.log(weakset.has(obj1));
+    </script>
+    </html>
+<!-- 
+    <html>
+        <script>
+        var set=new Set(['a','b','c','d']);
+        var iterator=set.entries();
+        console.log(iterator.next());
+        </script>
+    </html> -->
+
+    <html>
+        <script>
+            var set1=new Set(['a','b','c','d']);
+            var iterator1=set1.values();
+            console.log(iterator1.next());
+        </script>
+    </html>
+
+    <html>
+        <script>
+            var set11=new Set(['a','b','c','d']);
+            var iterator11=set11.keys();
+            console.log(iterator11.next());
+        </script>
+    </html>
+
+    <html>
+        <script>
+            var map=new Map([[1,'one'],[2,'two'],[3,'three']]);
+            var iterator2=map.entries();
+            console.log(iterator2.next());
+        </script>
+    </html>
+
+    <html>
+        <script>
+            var map=new Map([[1,'one'],[2,'two'],[3,'three']]);
+            var iterator21=map.values();
+            console.log(iterator21.next());
+        </script>
+    </html>
+
+    <html>
+        <script>
+            var map=new Map([[1,'one'],[2,'two'],[3,'three']]);
+            var iterator3=map.keys();
+            console.log(iterator3.next());
+        </script>
+    </html>

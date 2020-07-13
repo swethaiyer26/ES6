@@ -1,0 +1,70 @@
+<html>
+<script>
+    var numbers=[1,2,3,4,];
+    var oddnumber=numbers.find((x) => x%2==1);
+    console.log(oddnumber);
+</script>
+</html>
+
+<html>
+    <script>
+        var number1=[1,2,3,4];
+        var oddnumber1=number1.findIndex((x) => x%2==1);
+        console.log(oddnumber1);
+    </script>
+</html>
+
+<html>
+    <script>
+        var number2=[1,2,3,4];
+        var oddnumber2=number2.entries();
+        console.log(oddnumber2.next().value);
+        console.log(oddnumber2.next().value);
+        console.log(oddnumber2.next().value);
+    </script>
+</html>
+
+<html>
+    <script>
+        "use strict"
+    for(let i of Array.from('hello')){
+        console.log(i);
+        console.log(Array.from(['a','b'].keys()));
+    }
+    </script>
+</html>
+
+<html>
+    <script>
+        "use strict"
+        var number3=[1001,1002,1003];
+        for(let j in number3) {
+            console.log(number3[j]);
+        }
+    </script>
+</html>
+
+<html>
+    <script>
+        let names=["swetha","janardhan","iyer"];
+        let[n1,n2,n3]=names;
+        console.log(n1);
+        console.log(n2);
+        console.log(n3);
+        let locations=["Mumbai","Chennai","Bangalore"];
+        let[l1,...othervalues]=locations;
+        console.log(l1);
+        console.log(othervalues)
+        let name1,name2;
+        [name1,name2]=names;
+        console.log(name1);
+        console.log(name2);
+        let first=10,second=20;
+        [second,first]=[first,second];
+        console.log("second is " + second);
+        console.log("first is " + first);
+    </script>
+</html>
+
+    </script>
+</html>

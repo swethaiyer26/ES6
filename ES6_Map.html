@@ -1,0 +1,58 @@
+<!-- <html>
+<script>
+    var map=new Map();
+    map.set('name','TutorialsPoint'),
+    map.get('name')
+</script>
+</html> -->
+
+<!-- <script>
+var map = new Map(); 
+map.set(1,true); 
+console.log(map.has("1")); //false 
+map.set("1",true); 
+console.log(map.has("1")); //true
+</script> -->
+<!-- 
+<script>
+    var roles=new Map();
+    roles.set('r1','Admin')
+     .set('r2','Guest')
+     .set('r3','User')
+     console.log(roles.has('r1'));
+</script> -->
+<!-- 
+<script>
+var roles = new Map([ 
+   ['r1', 'User'], 
+   ['r2', 'Guest'], 
+   ['r3', 'Admin'], 
+]);  
+console.log(roles.get('r2'))
+</script> -->
+
+<!-- <html>
+    <script>
+    var roles=new Map([
+   ['r1', 'User'], 
+   ['r2', 'Guest'], 
+   ['r3', 'Admin'], 
+]); 
+console.log(`value of key r1 before set(): ${roles.get('r1')}`)
+roles.set('r1','SuperUser');
+console.log(`value of key r1 before set(): ${roles.get('r1')}`)
+ </script>
+</html> -->
+
+<html>
+ <script>
+ 'use strict' 
+var roles = new Map([ 
+   ['r1', 'User'], 
+   ['r2', 'Guest'], 
+   ['r3', 'Admin'], 
+]);
+for(let r of roles.enteries()) 
+console.log(`${r[0]}:${r[1]}`)
+    </script>
+</html>

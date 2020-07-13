@@ -1,0 +1,38 @@
+<html>
+    <script>
+        function * getMarks(){
+            console.log("Step 1")
+            yield 10
+            console.log("Step 2")
+            yield 20
+            console.log("Step 3")
+            yield 30
+            console.log("Done")
+        }
+
+        let markiter=getMarks();
+        console.log(markiter.next());
+        console.log(markiter.next());
+        console.log(markiter.next());
+        console.log(markiter.next());
+    </script>
+</html>
+
+<script>
+    function * evenNumberGenerator(){
+       let num = 0;
+       while(true){
+          num+=2
+          yield num
+       }
+    }
+    // display first two elements
+    let iter = evenNumberGenerator();
+    console.log(iter.next())
+    console.log(iter.next())
+    //using for of to iterate till 12
+    for(let n of evenNumberGenerator()){
+       if(n==12)break;
+       console.log(n);
+    }
+ </script>
