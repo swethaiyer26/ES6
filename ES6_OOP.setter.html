@@ -1,0 +1,47 @@
+<html>
+    <script>
+        let expr='name';
+        let obj= {
+            fname:'John',
+            set[expr](v) {this.fname=v;}
+        };
+        console.log(obj.fname);
+        obj.name='Sachin';
+        console.log(obj.fname);
+    </script>
+</html>
+
+<html>
+    <script>
+        let expr1='name';
+        let obj1={
+            get[expr](){return 'Swetha';}
+        };
+        console.log(obj1.name);
+    </script>
+</html>
+
+<html>
+    <script>
+        'use strict'
+        class StaticMem {
+           static disp(){
+               console.log("hello world");
+
+           };
+        }
+        StaticMem.disp();
+    </script>
+</html>
+
+<html>
+    <script>
+    'use strict'
+    class Person {}
+        var obj4=new Person()
+        var isPerson=obj4 instanceof Person;
+        console.log("The object is instance of person " + isPerson) ;
+         
+    </script>
+</html>
+

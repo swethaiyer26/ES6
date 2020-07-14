@@ -1,0 +1,36 @@
+<html>
+    <script>
+        class PrinterClass{
+            doPrint(){
+                console.log("doprint() to print a method");
+            }
+        }
+
+        class Printer extends PrinterClass{
+            doPrint(){
+                console.log("doprint() to print it")
+            }
+        }
+        var obj=new Printer();
+        obj.doPrint();
+    </script>
+</html>
+
+<html>
+    <script>
+        class Shape{
+            doCalc(){
+                console.log("doCalc to calculate");
+            }
+        }
+        class Square extends Shape{
+            doCalc(){
+                super.doCalc
+                    console.log("doCalc to calculate Square ")
+            }
+                }
+                var obj1=new Square();
+                obj1.doCalc();
+        
+    </script>
+</html>

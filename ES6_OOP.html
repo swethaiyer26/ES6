@@ -1,0 +1,39 @@
+<html>
+<script>
+    class Polygon{
+        constructor(height,width){
+        this.h=height;
+        this.w=width;
+        }
+
+        test(){
+            console.log("The height of the polygon is:", this.h);
+            console.log("The width of the polygon is:",this.w);
+        }
+          }
+    var poly=new Polygon(20,30);
+    poly.test();
+</script>
+</html>
+
+<html>
+    <script>
+    class Student{
+      constructor(rno,fname,lname){
+          this.rno=rno;
+          this.fname=fname;
+          this.lname=lname;
+          console.log("inside constructor");
+      }
+      
+      set rollno(newRollNo){
+          console.log("inside setter");
+          this.rno=newRollNo;
+      }
+    }
+    let num=new Student(120,'John','Doe');
+    console.log(num);
+    num.rollno=701;
+    console.log(num);
+    </script>
+</html>

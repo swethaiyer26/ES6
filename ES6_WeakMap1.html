@@ -1,0 +1,57 @@
+<html>
+    <script>
+        let empMap=new WeakMap();
+        let e1={ename:'Swetha'},
+         e2={ename:'Arvind'},
+         e3={ename:'Arjun'}
+
+         empMap.set(e1,1001);
+         empMap.set(e2,1002);
+         empMap.set(e3,1003);
+
+         console.log(empMap);
+         console.log(empMap.get(e2));
+         console.log(empMap.has(e2));
+         empMap.delete(e1);
+       console.log(empMap);
+    </script>
+</html>
+
+<html>
+    <script>
+   let names = new Set(['A','B','C','D']);
+   console.log(names);
+   console.log(names.size);
+    </script>
+</html>
+
+<html>
+    <script>
+    let name=new Set(['A','B','C','D']);
+    console.log('foreach');
+   names.forEach(n => console.log(n));
+
+   console.log("for loop")
+   for(let n of name) {
+    console.log(n);
+   }
+    </script>
+</html>
+
+<html>
+    <script>
+    let e4={ename:'Minaxi'}
+    let e5={ename:'Siddesh'}
+    let e6={ename:'Vaishnavi'}
+
+    let emp=new WeakSet();
+    emp.add(e4);
+    emp.add(e5)
+    .add(e6);
+
+    console.log(emp);
+    console.log(emp.has(e4));
+    emp.delete(e4);
+    console.log(emp);       
+</script>
+</html>
