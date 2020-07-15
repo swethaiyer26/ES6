@@ -1,0 +1,20 @@
+<html>
+    <script>
+    function notifyAll(fsms,femail){
+        setTimeout(function(){
+            console.log("Notifying messages")
+        fsms();
+        femail();
+        },2000);
+    
+    }
+
+    notifyAll(function(){
+        console.log("send sms");
+    },
+ function(){
+     console.log("send email");
+    });
+    console.log("end...")
+    </script>
+</html>

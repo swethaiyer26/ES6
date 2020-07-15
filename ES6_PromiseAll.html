@@ -1,0 +1,26 @@
+<html>
+    <script>
+        function addpositiveno(n1,n2){
+            let p=new Promise(function(resolve,reject){
+                if(n1>=0 && n2 >=0){
+                    resolve(n1+n2)
+                }else
+                reject("Not a positive no")
+            })
+            return p
+        }
+
+       Promise.all([addpositiveno(10,20),addpositiveno(20,30),addpositiveno(30,40)])
+       .then(function(resolveValue){
+           console.log(resolveValue[0])
+           console.log(resolveValue[1])
+           console.log(resolveValue[2])
+           console.log("all add operations done");
+       })
+       .catch(function(err){
+           console.log("error message",err)
+       })
+
+       console.log("end");
+    </script>
+</html>

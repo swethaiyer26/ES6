@@ -1,0 +1,22 @@
+<html>
+    <script>
+        function addpositiveno(n1,n2){
+            let p=new Promise(function(resolve,reject){
+                if(n1>=0 && n2>=0){
+                    resolve(n1+n2);
+                } else
+                reject("Not a positive no")
+            })
+            return p;
+        }
+
+        Promise.race([addpositiveno(10,20),addpositiveno(20,30)])
+        .then(function(resolveValue){
+            console.log("One of them is done")
+            console.log(resolveValue);       
+        }).catch(function(err){
+    console.log("Error",err)
+        });
+        console.log("end");        
+    </script>
+</html>

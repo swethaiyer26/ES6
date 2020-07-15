@@ -1,0 +1,32 @@
+<html>
+    <script>
+        function addpositivenos(n1,n2){
+            let p=new Promise(function(resolve,reject){
+                if(n1>=0 &&n2>=0){
+                    resolve(n1+n2);
+                }
+                else
+                reject('Not a positive number');
+            })
+            return p;
+        }
+
+        addpositivenos(10,20)
+        .then(successHandler)
+        .catch(errorHandler)
+
+        addpositivenos(-10,-20)
+        .then(successHandler)
+        .catch(errorHandler)
+
+    function errorHandler(err){
+        console.log("Handling error ", err);
+    }
+
+    function successHandler(succ){
+        console.log("Handling success",succ);
+    }
+
+    console.log("end");
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<script>
+    function addpositiveno(n1,n2){
+    let p=new Promise(function(resolve,reject){
+        if(n1>=0 && n2>=0){
+            resolve(n1+n2)
+        }
+        else 
+            reject("Not a positive number"); 
+    })
+    return p
+    }
+    addpositiveno(10,20)
+    .then(function(result){
+        console.log("The first result is ",result)
+        return addpositiveno(result,result)
+    }).then(function(result){
+        console.log("The second result is ",result)
+        return addpositiveno(result,result)
+    }).then(function(result){
+        console.log("The third result is ",result)
+    })
+console.log("end");
+   
+</script>
+</html>
