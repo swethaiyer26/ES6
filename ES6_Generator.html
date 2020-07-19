@@ -1,0 +1,37 @@
+<!-- 
+<html>
+    <body>
+        <script>
+     "use script"
+   function * rainbow(){
+   yield 'red'; 
+   yield 'orange'; 
+   yield 'yellow'; 
+   yield 'green'; 
+   yield 'blue'; 
+   yield 'indigo'; 
+   yield 'violet'; 
+} 
+for(let color of rainbow()) {
+console.log(color);
+}
+ </script>
+ </body>
+</html> -->
+
+<html>
+<body>
+<script>
+"use script"
+function * ask(){
+    const name=yield "What is your name";
+    const sport=yield "what is your sport";
+    return `${name}'s favourite sport is ${sport}`;
+}
+const it=ask();
+console.log(it.next());
+console.log(it.next('Swetha'));
+console.log(it.next('badminton'));
+</script>
+</body>
+</html>

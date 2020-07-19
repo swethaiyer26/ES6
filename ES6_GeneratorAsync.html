@@ -1,0 +1,23 @@
+<html>
+    <script>
+        const student={
+            age:10,
+            height:5,
+            weight:50
+        }
+        const{age,...other}=student;
+        console.log(age);
+        console.log(other);      
+    </script>
+</html>
+
+<html>
+<script>
+    const obj1={a:10,b:20}
+    const obj2={c:30}
+    const clone_obj={...obj1}
+    const obj3={...obj1,...obj2}
+    console.log(clone_obj);
+    console.log(obj3);
+</script>
+</html>

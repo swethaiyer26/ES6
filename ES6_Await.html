@@ -1,0 +1,34 @@
+<html>
+    <script>
+        function fnTimeConsumingWork(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=> {
+                    resolve('response is:2 seconds have passed')
+                },2000)
+            })
+        }
+        fnTimeConsumingWork().then(resp =>{
+         console.log(resp)
+        })
+        console.log("script end")
+    </script>
+</html>
+
+<html>
+    <script>
+        function funtimeComsumeWork(){
+            return new Promise((resolve,reject) => {
+                setTimeout(() => {
+                    resolve('response two seconds have passed')
+                },2000);
+            })
+        }
+        async function my_async(){
+            console.log('inside async function')
+            const response=await funtimeComsumeWork();
+            console.log(response);
+        }
+        my_async();
+        console.log("script ended");
+    </script>
+</html>

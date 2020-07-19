@@ -1,0 +1,25 @@
+<html>
+    <script>
+        function addpositivenos(n1,n2){
+            let p=new Promise(function(resolve,reject){
+                if(n1>=0 &&n2>=0){
+                    resolve(n1+n2)
+                } else 
+                reject("Not a positive no")
+            })
+            return p;
+        }
+
+        async function addInSequence(){
+            let r1=await addpositivenos(10,40)
+                console.log("first result",r1);
+            let r2=await addpositivenos(r1,r1);
+            console.log("second result",r2);
+            let r3=await addpositivenos(r2,r2);
+            console.log("third result",r3);
+            return "Done Sequence"
+            }
+       addInSequence().then((r)=> console.log("Async:",r))
+       console.log("end");
+    </script>
+</html>

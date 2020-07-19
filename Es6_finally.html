@@ -1,0 +1,46 @@
+<html>
+    <script>
+    let asyncsquarefun=function(n1){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            if(n1>=0){
+                resolve(n1*n1)
+            } else
+            reject("Number is negative")
+        },3000)
+        })
+    }
+    console.log('start')
+
+    asyncsquarefun(10)
+    .then(result =>{
+        console.log("number returned",result)
+    }).catch(error=>console.log(error))
+.finally(()=>{
+    console.log("inside finally")
+    console.log("executes all the time")
+})
+console.log("end");
+ </script>
+</html>
+
+<html>
+    <script>
+    function myTagfn(str){
+        return {"parsed":str[0], "RAW":str.raw[0]}
+    }
+    let result1 =myTagfn`\unicode`
+    console.log(result1)
+    let result2 =myTagfn`\u2764\uFE0F`
+   console.log(result2)
+    </script>
+</html>
+
+<html>
+    <script>
+        const birthyearpattern=/(?<myyear>[0-9]{4})-(?<mymonth>[0-9]{2})/;
+        const birthDate=birthyearpattern.exec('1998-07');
+        console.log(birthDate.groups.myyear)
+        console.log(birthDate.groups.mymonth)
+        </script>
+        </html>

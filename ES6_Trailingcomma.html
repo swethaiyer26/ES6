@@ -1,0 +1,47 @@
+<html>
+    <script>
+       function sumOfMarks(marks,){
+           let sum=0;
+           marks.forEach(function(e){
+               sum+=e;
+               
+           });
+        return sum
+       }
+       console.log(sumOfMarks([10,20,20]));
+          console.log(sumOfMarks([1,2,3],));    
+    </script>
+</html>
+
+<!-- <html>
+    <script>
+        const student={
+            firstName:'Swetha',
+            lastName:'Janardhan'
+        }
+        console.log(Object.entries(student))
+        console.log(Object.values(student))
+        </script>
+        </html> -->
+
+        
+<html>
+    <script>
+        const marks1=[10,20,40]
+        console.log(Object.entries(marks1))
+        console.log(Object.values(marks1))
+        </script>
+        </html>
+
+        <html>
+            <script>
+                const student = {
+                   firstName : 'Mohtashim',
+                   lastName: 'Mohammad',
+                   get fullName(){
+                      return this.firstName + ':'+ this.lastName
+                   }
+                }
+                console.log(Object.getOwnPropertyDescriptors(student))
+             </script>
+        </html>
